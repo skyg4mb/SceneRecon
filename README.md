@@ -23,3 +23,4 @@ docker container stop <containder id>
 para visualizar el container id lo puede hacer con la instruccion docker container ls
   
 
+Finalmente se crea el docker-compose.yaml que con tan solo la instruccion de despliegue genera la aplicacion en nuestra maquina.

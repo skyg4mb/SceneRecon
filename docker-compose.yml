@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+    database:
+        image: mongo
+        ports: 
+            - "27017:27017"
+    roisbe:
+        build: ./rois
+        ports:
+            - "1337:1337"
+        links:
+            - database
+        depends_on:
+            - database
+    client: 
+        build: ./rois-fe
+        ports: 
+            - "80:80"
+        links:
+            - roisbe
+        depends_on:
+            - roisbe

@@ -22,3 +22,4 @@ docker container stop <containder id>
   
 para visualizar el container id lo puede hacer con la instruccion docker container ls
   
+

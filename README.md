@@ -18,6 +18,8 @@ $ cd SceneRecon
 $ docker compose up -d
 ```
 
+Explicare dentro del blog del proyecto cada uno de los contenedores y sus funcionalidades.
+
 
 ## Alert
 

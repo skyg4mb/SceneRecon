@@ -11,7 +11,7 @@ El deploy de la aplicacion es bastante sencillo:
 1. Instalar docker https://docs.docker.com/get-docker/
 
 ...
-$ git clone https://github.com/skyg4mb/SceneRecon
-$ cd SceneRecon
-$ docker compose up -d
+ git clone https://github.com/skyg4mb/SceneRecon
+ cd SceneRecon
+ docker compose up -d
 ...

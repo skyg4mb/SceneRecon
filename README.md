@@ -2,25 +2,16 @@
 
 Application for document incident response collaboratively
 
-La aplicacion consta de tres partes que puedes ser modificadas en el despliegue, sin embargo en pro de facilitar su despliegue utilizarems un unico docker desde docker hub.
+La aplicacion consta de tres partes que puedes ser modificadas en el despliegue, sin embargo en pro de facilitar su despliegue utilizaremos un unico docker desde docker hub.
 
-## Proceso de creacion de dockers 
+## Deploy
 
-En caso de que se tenga el codigo fuente de la aplicacion podemos compilar el docker con la instruccion:
+El deploy de la aplicacion es bastante sencillo: 
 
-docker build -t skyg4mb/rois .
+1. Instalar docker https://docs.docker.com/get-docker/
 
-para efectos practicos utilizaremos tanto certificados como llaves privadas por defecto, sin embargo, se recomienda fuertemente cambiarlos (proximamente documentare el metodo para su modificacion)
-
-La forma de ejecutarlo es la siguiente:
-
-docker run -t -v config/default.ts:/app/config/default.ts skyg4mb/rois
-
-En caso de querer detener su ejecucion podemos hacerlo con la instruccion 
-
-docker container stop <containder id>
-  
-para visualizar el container id lo puede hacer con la instruccion docker container ls
-  
-
-Finalmente se crea el docker-compose.yaml que con tan solo la instruccion de despliegue genera la aplicacion en nuestra maquina.
+...
+$ git clone https://github.com/skyg4mb/SceneRecon
+$ cd SceneRecon
+$ docker compose up -d
+...

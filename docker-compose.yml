@@ -5,19 +5,22 @@ services:
         image: mongo
         ports: 
             - "27017:27017"
-    roisbe:
-        build: ./rois
+    backend:
+        image: skyg4mb/bescenerecon:latest
         ports:
             - "1337:1337"
+        volumes:
+            - "./config:/app/config"
+            - "./certs:/app/certs"
         links:
             - database
         depends_on:
             - database
     client: 
-        build: ./rois-fe
+        image: skyg4mb/scenerecon:latest
         ports: 
             - "80:80"
         links:
-            - roisbe
+            - backend
         depends_on:
-            - roisbe
+            - backend

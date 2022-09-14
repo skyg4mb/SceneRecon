@@ -23,6 +23,6 @@ Explicare dentro del blog del proyecto cada uno de los contenedores y sus funcio
 
 ## Alert
 
-Los certificados y las configuraciones que se encuentran en este repositorio, son publicos por tanto recomiendo generar sus propias keys y certificados para el uso de la aplicacion.
+Los certificados y las configuraciones que se encuentran en este repositorio, son publicos por tanto recomiendo generar sus propias keys y certificados para el uso de la aplicacion..
 
 
